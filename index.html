@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHAZ Luxury Collections | Website</title>
+    <title>SHAZ Luxury Collections | Premium Fragrances</title>
     <style>
-        /* No White Space & Full Luxury Floral Background */
+        /* Full Luxury Floral Background - No White Space */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body { 
             font-family: 'Playfair Display', serif, 'Segoe UI', Arial; 
-            /* Light Floral Texture Background */
-            background-color: #fdfdfd;
+            /* Luxury Floral Dark Theme */
+            background-color: #002366;
             background-image: url('www.transparenttextures.com'), linear-gradient(135deg, #1a2a6c 0%, #b21f1f 100%);
             background-attachment: fixed;
             color: #333; 
@@ -20,7 +20,7 @@
 
         /* Royal Header */
         header { 
-            background: #002366; 
+            background: rgba(0, 35, 102, 0.95); 
             color: #D4AF37; 
             padding: 60px 20px; 
             border-bottom: 8px solid #D4AF37; 
@@ -35,10 +35,10 @@
             object-fit: contain; box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
         
-        h1 { font-size: 3.2em; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 10px; }
+        h1 { font-size: 3.2em; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 10px; color: #D4AF37; }
         .tagline { font-style: italic; font-size: 1.4em; color: #f1f1f1; }
 
-        h2 { color: #ffffff; margin: 50px 0 30px; text-transform: uppercase; letter-spacing: 5px; text-align: center; }
+        h2 { color: #ffffff; margin: 50px 0 30px; text-transform: uppercase; letter-spacing: 5px; text-align: center; font-size: 2em; }
 
         /* Product Gallery */
         .container { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px 0 80px; gap: 30px; }
@@ -46,24 +46,27 @@
         .product-card { 
             background: rgba(255, 255, 255, 0.95); 
             padding: 30px; border-radius: 30px; 
-            width: 320px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); 
+            width: 330px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); 
             border: 2px solid #D4AF37; text-align: center;
+            transition: 0.4s;
         }
+        .product-card:hover { transform: translateY(-15px); }
         
-        .product-img { width: 100%; height: 380px; object-fit: cover; border-radius: 20px; margin-bottom: 20px; }
+        .product-img { width: 100%; height: 380px; object-fit: cover; border-radius: 20px; margin-bottom: 20px; border: 1px solid #ddd; }
         
-        h3 { color: #002366; font-size: 1.8em; margin-bottom: 12px; }
+        h3 { color: #002366; font-size: 1.8em; margin-bottom: 12px; font-weight: bold; }
+        p { color: #444; line-height: 1.6; margin-bottom: 15px; }
 
         /* Premium WhatsApp Button */
         .btn { 
-            background: #25D366; 
+            background: linear-gradient(to right, #25D366, #128C7E); 
             color: white; padding: 16px 40px; 
             text-decoration: none; font-weight: bold; 
             border-radius: 50px; display: inline-block; 
             box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4);
-            font-size: 1.15em; transition: 0.3s;
+            font-size: 1.1em; transition: 0.3s;
         }
-        .btn:hover { transform: scale(1.1); background: #128C7E; }
+        .btn:hover { transform: scale(1.1); box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6); }
 
         footer { 
             padding: 60px 20px; background: #002366; 
@@ -77,40 +80,40 @@
     <header>
         <img src="./logo.png.png" alt="SHAZ Luxury Logo" class="logo">
         <h1>SHAZ Luxury Collections</h1>
-        <p class="tagline">Experience Your Essence</p>
+        <p class="tagline">Experience the Essence of Pure Luxury</p>
     </header>
 
-    <h2>Our Selection</h2>
+    <h2>Our Signature Fragrances</h2>
 
     <div class="container">
-        <!-- Product 1 -->
+        <!-- White Oud -->
         <div class="product-card">
-            <img src="./img1.jpg.png" alt="Product 1" class="product-img">
-            <h3>Product Name 1</h3>
-            <p>Description of Product 1</p>
-            <a href="wa.me!" target="_blank" class="btn">Order via WhatsApp</a>
+            <img src="./img1.jpg.png" alt="White Oud" class="product-img">
+            <h3>White Oud</h3>
+            <p>A royal blend of pure woody notes and timeless elegance. Long-lasting luxury.</p>
+            <a href="wa.me" target="_blank" class="btn">Order via WhatsApp</a>
         </div>
 
-        <!-- Product 2 -->
+        <!-- Flora Bloom -->
         <div class="product-card">
-            <img src="./img2.jpg.png" alt="Product 2" class="product-img">
-            <h3>Product Name 2</h3>
-            <p>Description of Product 2</p>
-            <a href="wa.me!" target="_blank" class="btn">Order via WhatsApp</a>
+            <img src="./img2.jpg.png" alt="Flora Bloom" class="product-img">
+            <h3>Flora Bloom</h3>
+            <p>Inspired by Gucci Flora. A delicate dance of fresh flowers and sophistication.</p>
+            <a href="wa.me" target="_blank" class="btn">Order via WhatsApp</a>
         </div>
 
-        <!-- Product 3 -->
+        <!-- Janan Gold -->
         <div class="product-card">
-            <img src="./img3.jpg.png" alt="Product 3" class="product-img">
-            <h3>Product Name 3</h3>
-            <p>Description of Product 3</p>
-            <a href="wa.me!" target="_blank" class="btn">Order via WhatsApp</a>
+            <img src="./img3.jpg.png" alt="Janan Gold" class="product-img">
+            <h3>Janan Gold</h3>
+            <p>Sophisticated, sharp, and powerful. A premium impression for the bold.</p>
+            <a href="wa.me" target="_blank" class="btn">Order via WhatsApp</a>
         </div>
     </div>
 
     <footer>
-        <p>© 2025 SHAZ Luxury Collections | WhatsApp: +92 322 8298955</p>
-        <p>Your Journey Starts Here</p>
+        <p>© 2025 SHAZ Luxury Collections</p>
+        <p>WhatsApp: +92 322 8298955 | Experience the Pure Luxury</p>
     </footer>
 
 </body>
