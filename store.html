@@ -3,61 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHAZ Luxury Collections | Official Store</title>
+    <title>SHAZ Luxury Store</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-            background-attachment: fixed; color: #333; text-align: center;
-        }
-        header { background: #002366; color: #D4AF37; padding: 40px 20px; border-bottom: 6px solid #D4AF37; }
-        .logo { width: 140px; height: 140px; background: white; border-radius: 50%; border: 3px solid #D4AF37; margin-bottom: 15px; }
-        .container { display: flex; flex-wrap: wrap; justify-content: center; padding: 40px 10px; gap: 30px; }
-        .product-card { background: rgba(255, 255, 255, 0.95); padding: 30px; border-radius: 20px; width: 320px; border: 2px solid #D4AF37; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-        .product-img { width: 100%; height: 350px; object-fit: cover; border-radius: 15px; }
-        .sale-badge { background: #d0021b; color: white; padding: 5px 15px; border-radius: 5px; font-weight: bold; position: absolute; margin: 10px; }
-        .btn { background: #25D366; color: white; padding: 15px 40px; text-decoration: none; font-weight: bold; border-radius: 50px; display: inline-block; margin-top: 20px; transition: 0.3s; }
-        .btn:hover { background: #128C7E; transform: scale(1.05); }
-        .price { font-size: 20px; font-weight: bold; color: #d0021b; margin: 10px 0; }
-        footer { padding: 40px; background: #002366; color: #D4AF37; border-top: 5px solid #D4AF37; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f4f4; color: #333; }
+        header { background: #002366; color: #D4AF37; padding: 30px; text-align: center; border-bottom: 4px solid #D4AF37; }
+        .logo { width: 100px; height: 100px; background: white; border-radius: 50%; border: 2px solid #D4AF37; margin-bottom: 10px; }
+        .breadcrumb { padding: 15px 10%; background: #fff; border-bottom: 1px solid #eee; font-size: 13px; color: #888; }
+        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 40px 10%; }
+        .product-card { background: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; position: relative; transition: 0.3s; text-align: left; }
+        .product-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+        .sale-badge { position: absolute; top: 10px; left: 10px; background: #002366; color: white; padding: 4px 10px; font-size: 11px; font-weight: bold; border-radius: 4px; }
+        .product-img { width: 100%; height: 350px; object-fit: cover; }
+        .product-info { padding: 15px; }
+        .product-title { font-size: 15px; font-weight: 600; margin-bottom: 10px; height: 40px; overflow: hidden; color: #222; }
+        .price-box { margin-bottom: 15px; }
+        .old-price { text-decoration: line-through; color: #999; margin-right: 10px; font-size: 14px; }
+        .new-price { color: #d0021b; font-size: 18px; font-weight: bold; }
+        .btn-buy { display: block; width: 100%; padding: 12px; background: #002366; color: #D4AF37; text-align: center; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 14px; }
+        footer { background: #002366; color: #D4AF37; padding: 40px; text-align: center; margin-top: 50px; }
     </style>
 </head>
 <body>
     <header>
         <img src="./logo.png.png" alt="SHAZ Logo" class="logo">
         <h1>SHAZ Luxury Collections</h1>
-        <p>Official E-commerce Store</p>
+        <p>Premium Store</p>
     </header>
-
+    <div class="breadcrumb">Home / Fragrances / In Stock (50)</div>
     <div class="container">
-        <!-- White Oud -->
         <div class="product-card">
+            <span class="sale-badge">SALE</span>
             <img src="./img1.jpg.png" class="product-img">
-            <h3>White Oud Premium</h3>
-            <p class="price">Rs. 3,999</p>
-            <a href="wa.me" target="_blank" class="btn">Order via WhatsApp</a>
+            <div class="product-info">
+                <p class="product-title">White Oud Premium | Royal Long Lasting Fragrance</p>
+                <div class="price-box">
+                    <span class="old-price">Rs.5,500</span> <span class="new-price">Rs.3,999</span>
+                </div>
+                <a href="wa.me want to buy White Oud" target="_blank" class="btn-buy">ADD TO CART</a>
+            </div>
         </div>
-
-        <!-- Flora Bloom -->
         <div class="product-card">
+            <span class="sale-badge">SALE</span>
             <img src="./img2.jpg.png" class="product-img">
-            <h3>Flora Bloom</h3>
-            <p class="price">Rs. 3,299</p>
-            <a href="wa.me" target="_blank" class="btn">Order via WhatsApp</a>
+            <div class="product-info">
+                <p class="product-title">Flora Bloom Luxury | Inspired by Gucci Flora</p>
+                <div class="price-box">
+                    <span class="old-price">Rs.4,500</span> <span class="new-price">Rs.3,299</span>
+                </div>
+                <a href="wa.me want to buy Flora Bloom" target="_blank" class="btn-buy">ADD TO CART</a>
+            </div>
         </div>
-
-        <!-- Janan Gold -->
         <div class="product-card">
+            <span class="sale-badge">SALE</span>
             <img src="./img3.jpg.png" class="product-img">
-            <h3>Janan Gold</h3>
-            <p class="price">Rs. 4,499</p>
-            <a href="wa.me" target="_blank" class="btn">Order via WhatsApp</a>
+            <div class="product-info">
+                <p class="product-title">Janan Gold Special | Premium Luxury Fragrance</p>
+                <div class="price-box">
+                    <span class="old-price">Rs.6,000</span> <span class="new-price">Rs.4,499</span>
+                </div>
+                <a href="wa.me want to buy Janan Gold" target="_blank" class="btn-buy">ADD TO CART</a>
+            </div>
         </div>
     </div>
-
     <footer>
-        <p>© 2025 SHAZ Luxury Collections | WhatsApp: 0322-8298955</p>
+        <p>© 2025 SHAZ Luxury Collections | WhatsApp: +92 322 8298955</p>
     </footer>
 </body>
 </html>
